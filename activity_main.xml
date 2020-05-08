@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter first no."
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter second no."
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayoutin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        tools:context=".MainActivity">
+
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+
+            android:text="+"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:onClick="add"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+
+            android:text="-"
+            android:textSize="25dp"
+            android:onClick="sub"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_blue_light"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="*"
+            android:textSize="25dp"
+
+            android:layout_margin="10dp"
+            android:onClick="mult"
+            android:background="@android:color/holo_blue_light"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayoutin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+
+            android:text="/"
+            android:textSize="25dp"
+            android:onClick="div"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+
+            android:text="%"
+            android:textSize="25dp"
+            android:onClick="mode"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+
+            android:text="CLR"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:onClick="clear"
+            android:background="@android:color/holo_blue_light"/>
+
+    </LinearLayout>
+</LinearLayout>
